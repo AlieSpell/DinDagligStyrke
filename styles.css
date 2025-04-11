@@ -1,0 +1,63 @@
+body {
+  font-family: 'Bubblegum Sans', cursive;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 2em;
+}
+h1 {
+  margin-bottom: 20px;
+}
+/* The container holds the SVG wheel and the fixed pointer above it */
+#wheelContainer {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto 20px;
+  margin-top: 20px;
+  transition: transform 4s ease-out;
+}
+/* Fixed pointer (red triangle) above the wheel */
+#pointer {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#pointer::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid red;
+}
+
+button {
+    transition: 0.15s;
+    background-color: aquamarine;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  font-family: 'Bubblegum Sans', cursive;
+  outline: none;
+  border-radius: 20px;
+}
+
+button:hover {
+    transition: 0.15s;
+    background-color: aquamarine;
+    padding: 20px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-family: 'Bubblegum Sans', cursive;
+    outline: none;
+    border-radius: 30px;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Bubblegum Sans', cursive;
+}
